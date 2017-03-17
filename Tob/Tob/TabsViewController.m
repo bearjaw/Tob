@@ -15,7 +15,6 @@
 #import "Bookmark.h"
 #import "BridgeViewController.h"
 #import "NSStringPunycodeAdditions.h"
-#import "iRate.h"
 #import "LogViewController.h"
 #import "MBProgressHUD.h"
 #import <objc/runtime.h>
@@ -1224,8 +1223,6 @@ static const CGFloat kRestoreAnimationDuration = 0.0f;
 }
 
 - (void)settingsTapped:(UIBarButtonItem *)sender {
-    // Increment the rating counter, and show it if the requirements are met
-    [[iRate sharedInstance] logEvent:NO];
     [self openSettingsView];
 }
 

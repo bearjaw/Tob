@@ -14,7 +14,6 @@
 #import "BridgeViewController.h"
 #import "Ipv6Tester.h"
 #import "JFMinimalNotification.h"
-#import "iRate.h"
 
 @interface AppDelegate ()
 - (Boolean)torrcExists;
@@ -40,12 +39,6 @@ usingObfs,
 didLaunchObfsProxy
 ;
 
-+ (void)initialize
-{
-    [iRate sharedInstance].onlyPromptIfLatestVersion = NO;
-    [iRate sharedInstance].eventsUntilPrompt = 10;
-    [iRate sharedInstance].daysUntilPrompt = 5;
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     usingObfs = NO;

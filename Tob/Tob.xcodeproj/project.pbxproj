@@ -61,14 +61,11 @@
 		334CF96B1CD380E700C3E346 /* torrc in Resources */ = {isa = PBXBuildFile; fileRef = 334CF94A1CD380E700C3E346 /* torrc */; };
 		334CF96C1CD380E700C3E346 /* TorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 334CF94C1CD380E700C3E346 /* TorWrapper.m */; };
 		334CF96D1CD380E700C3E346 /* ULINetSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 334CF94E1CD380E700C3E346 /* ULINetSocket.m */; };
-		336012301CE789E600DDC290 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3360122D1CE789E600DDC290 /* iRate.bundle */; };
-		336012311CE789E600DDC290 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3360122F1CE789E600DDC290 /* iRate.m */; };
 		336181FA1E09963400642D0F /* geoip in Resources */ = {isa = PBXBuildFile; fileRef = 336181F81E09963400642D0F /* geoip */; };
 		336181FB1E09963400642D0F /* geoip6 in Resources */ = {isa = PBXBuildFile; fileRef = 336181F91E09963400642D0F /* geoip6 */; };
 		336182071E09975200642D0F /* Iobfs4proxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 336182061E09975200642D0F /* Iobfs4proxy.framework */; };
 		336182091E09982900642D0F /* Tor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 336182081E09982900642D0F /* Tor.framework */; };
 		3361820A1E09982900642D0F /* Tor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 336182081E09982900642D0F /* Tor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		336E59D81CE877F400F52A46 /* LICENCE - iRate.md in Resources */ = {isa = PBXBuildFile; fileRef = 336012321CE789FA00DDC290 /* LICENCE - iRate.md */; };
 		3396C3691CCF739200C7CCE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3396C3681CCF739200C7CCE2 /* Assets.xcassets */; };
 		3396C3761CCF752F00C7CCE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3396C3751CCF752F00C7CCE2 /* QuartzCore.framework */; };
 		33AFDFDD1CDB326A00B6DFBB /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33AFDFDC1CDB326A00B6DFBB /* Entitlements.plist */; };
@@ -196,10 +193,6 @@
 		334CF94C1CD380E700C3E346 /* TorWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorWrapper.m; sourceTree = "<group>"; };
 		334CF94D1CD380E700C3E346 /* ULINetSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ULINetSocket.h; sourceTree = "<group>"; };
 		334CF94E1CD380E700C3E346 /* ULINetSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ULINetSocket.m; sourceTree = "<group>"; };
-		3360122D1CE789E600DDC290 /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iRate.bundle; sourceTree = "<group>"; };
-		3360122E1CE789E600DDC290 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
-		3360122F1CE789E600DDC290 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
-		336012321CE789FA00DDC290 /* LICENCE - iRate.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "LICENCE - iRate.md"; sourceTree = "<group>"; };
 		336181F81E09963400642D0F /* geoip */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geoip; sourceTree = "<group>"; };
 		336181F91E09963400642D0F /* geoip6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geoip6; sourceTree = "<group>"; };
 		336182061E09975200642D0F /* Iobfs4proxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Iobfs4proxy.framework; sourceTree = "<group>"; };
@@ -328,7 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				334CF90E1CD380E600C3E346 /* ConnectionKit */,
-				3360122C1CE789E600DDC290 /* iRate */,
 				333E27011CDB859A00D33B2F /* JFMinimalNotification */,
 				3303E5051E33B7E10019949A /* MBProgressHUD */,
 				334CF9111CD380E600C3E346 /* MOScrollView */,
@@ -439,17 +431,6 @@
 			);
 			name = Tor;
 			path = ThirdParty/Tor;
-			sourceTree = "<group>";
-		};
-		3360122C1CE789E600DDC290 /* iRate */ = {
-			isa = PBXGroup;
-			children = (
-				336012321CE789FA00DDC290 /* LICENCE - iRate.md */,
-				3360122D1CE789E600DDC290 /* iRate.bundle */,
-				3360122E1CE789E600DDC290 /* iRate.h */,
-				3360122F1CE789E600DDC290 /* iRate.m */,
-			);
-			path = iRate;
 			sourceTree = "<group>";
 		};
 		3396C3501CCF739200C7CCE2 = {
@@ -603,7 +584,6 @@
 				33DD8F641DD623F000D85048 /* TLDs.json in Resources */,
 				336181FB1E09963400642D0F /* geoip6 in Resources */,
 				334CF96B1CD380E700C3E346 /* torrc in Resources */,
-				336012301CE789E600DDC290 /* iRate.bundle in Resources */,
 				334CF8D51CD37E0C00C3E346 /* Launch Screen.xib in Resources */,
 				3303E5091E33B7E10019949A /* LICENSE - MBProgressHUD in Resources */,
 				334CF95F1CD380E700C3E346 /* LICENSE - QRCodeReaderViewController in Resources */,
@@ -612,7 +592,6 @@
 				334CF9501CD380E700C3E346 /* LICENSE - MOScrollView in Resources */,
 				334CF9521CD380E700C3E346 /* LICENSE - MOTabView in Resources */,
 				333E270F1CDB859A00D33B2F /* LICENSE - JFMinimalNotification in Resources */,
-				336E59D81CE877F400F52A46 /* LICENCE - iRate.md in Resources */,
 				33FF98911CDA5CFE0086AED5 /* credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +644,6 @@
 				334CF8C71CD37D5000C3E346 /* Bridge.m in Sources */,
 				334CF8BD1CD37D2F00C3E346 /* Settings.xcdatamodeld in Sources */,
 				334CF9551CD380E700C3E346 /* MOTabContentView.m in Sources */,
-				336012311CE789E600DDC290 /* iRate.m in Sources */,
 				333E270D1CDB859A00D33B2F /* JFMinimalNotification.m in Sources */,
 				3303E50A1E33B7E10019949A /* MBProgressHUD.m in Sources */,
 				334CF8C81CD37D5000C3E346 /* BridgeViewController.m in Sources */,

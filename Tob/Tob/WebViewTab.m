@@ -9,7 +9,6 @@
 #import "WebViewTab.h"
 #import "AppDelegate.h"
 #import "JFMinimalNotification.h"
-#import "iRate.h"
 #import <objc/runtime.h>
 
 #define ALERTVIEW_SSL_WARNING 1
@@ -411,9 +410,6 @@ static char SSLWarningKey;
     }
     
     _progressDictionary = nil;
-    
-    // Increment the rating counter, but don't show the notification as it will interrupt the browsing experience
-    [[iRate sharedInstance] logEvent:YES];
     
     // If the webview contains a PDF, add an option to open it in another app
     if ([self isPDFContentLoadedInWebView:webView]) {
